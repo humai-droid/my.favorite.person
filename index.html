@@ -1,0 +1,1250 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You, My Favorite Boy 💙</title>
+
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            font-family: "Poppins", sans-serif;
+
+            background: #f5f9ff;
+
+            color: #334155;
+
+            overflow-x: hidden;
+
+        }
+
+
+        /* =========================
+           OPENING
+        ========================== */
+
+        .opening {
+
+            position: fixed;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #dbeafe,
+                    #eff6ff,
+                    #e0e7ff
+                );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-direction: column;
+
+            text-align: center;
+
+            z-index: 999;
+
+            transition: 1s;
+
+        }
+
+
+        .opening-icon {
+
+            font-size: 75px;
+
+            animation: floating 2s infinite;
+
+        }
+
+
+        .opening h1 {
+
+            font-family: "Quicksand", sans-serif;
+
+            font-size: 35px;
+
+            color: #1e3a8a;
+
+            margin: 15px 20px;
+
+            font-weight: 700;
+
+        }
+
+
+        .opening p {
+
+            max-width: 500px;
+
+            padding: 0 25px;
+
+            line-height: 1.8;
+
+            color: #64748b;
+
+        }
+
+
+        .open-button {
+
+            margin-top: 25px;
+
+            padding: 14px 28px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            background: #2563eb;
+
+            color: white;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            box-shadow: 0 8px 20px rgba(37,99,235,.25);
+
+            transition: .3s;
+
+        }
+
+
+        .open-button:hover {
+
+            transform: translateY(-4px) scale(1.03);
+
+        }
+
+
+        @keyframes floating {
+
+            0%, 100% {
+
+                transform: translateY(0) rotate(-5deg);
+
+            }
+
+            50% {
+
+                transform: translateY(-12px) rotate(5deg);
+
+            }
+
+        }
+
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+
+            min-height: 100vh;
+
+            padding: 30px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-direction: column;
+
+            text-align: center;
+
+            background:
+
+                radial-gradient(
+                    circle at 50% 20%,
+                    #dbeafe,
+                    transparent 40%
+                );
+
+        }
+
+
+        .small-text {
+
+            color: #64748b;
+
+            font-size: 14px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .hero h1 {
+
+            font-family: "Quicksand", sans-serif;
+
+            font-size: 48px;
+
+            color: #1e3a8a;
+
+            font-weight: 700;
+
+        }
+
+
+        .hero h2 {
+
+            font-family: "Quicksand", sans-serif;
+
+            font-size: 22px;
+
+            color: #3b82f6;
+
+            margin-top: 5px;
+
+        }
+
+
+        .hero p {
+
+            max-width: 600px;
+
+            margin-top: 20px;
+
+            line-height: 1.9;
+
+            color: #64748b;
+
+        }
+
+
+        .hero-heart {
+
+            font-size: 55px;
+
+            animation: heartbeat 1.5s infinite;
+
+        }
+
+
+        @keyframes heartbeat {
+
+            0%, 100% {
+
+                transform: scale(1);
+
+            }
+
+            50% {
+
+                transform: scale(1.15);
+
+            }
+
+        }
+
+
+
+        /* =========================
+           SECTION
+        ========================== */
+
+        section {
+
+            padding: 80px 25px;
+
+            text-align: center;
+
+        }
+
+
+        .title {
+
+            font-family: "Quicksand", sans-serif;
+
+            font-size: 30px;
+
+            color: #1e3a8a;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .subtitle {
+
+            color: #94a3b8;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .text {
+
+            max-width: 700px;
+
+            margin: auto;
+
+            line-height: 2;
+
+            color: #64748b;
+
+        }
+
+
+
+        /* =========================
+           PHOTO
+        ========================== */
+
+        .photo {
+
+            width: 280px;
+
+            background: white;
+
+            padding: 12px 12px 25px;
+
+            margin: 40px auto;
+
+            border-radius: 18px;
+
+            box-shadow:
+
+                0 15px 35px rgba(30,58,138,.12);
+
+            transform: rotate(-2deg);
+
+            transition: .4s;
+
+        }
+
+
+        .photo:hover {
+
+            transform: rotate(0) scale(1.04);
+
+        }
+
+
+        .photo img {
+
+            width: 100%;
+
+            height: 340px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+        }
+
+
+        .photo p {
+
+            margin-top: 15px;
+
+            font-family: "Quicksand", sans-serif;
+
+            font-weight: 600;
+
+            color: #64748b;
+
+        }
+
+
+
+        /* =========================
+           CARDS
+        ========================== */
+
+        .cards {
+
+            max-width: 900px;
+
+            margin: 40px auto 0;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+
+        }
+
+
+        .card {
+
+            background: white;
+
+            padding: 30px 22px;
+
+            border-radius: 25px;
+
+            box-shadow:
+
+                0 10px 30px rgba(30,58,138,.08);
+
+            border: 2px solid #eff6ff;
+
+            transition: .3s;
+
+        }
+
+
+        .card:hover {
+
+            transform: translateY(-8px);
+
+            border-color: #bfdbfe;
+
+        }
+
+
+        .card-icon {
+
+            font-size: 40px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .card h3 {
+
+            font-family: "Quicksand", sans-serif;
+
+            color: #1e3a8a;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .card p {
+
+            color: #64748b;
+
+            font-size: 14px;
+
+            line-height: 1.8;
+
+        }
+
+
+
+        /* =========================
+           SECRET
+        ========================== */
+
+        .secret-button {
+
+            margin-top: 25px;
+
+            padding: 14px 28px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            background: #2563eb;
+
+            color: white;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: .3s;
+
+        }
+
+
+        .secret-button:hover {
+
+            transform: scale(1.05);
+
+        }
+
+
+        #secret {
+
+            display: none;
+
+            max-width: 650px;
+
+            margin: 30px auto;
+
+            padding: 35px;
+
+            background: white;
+
+            border-radius: 25px;
+
+            box-shadow:
+
+                0 10px 30px rgba(30,58,138,.1);
+
+            animation: muncul 1s;
+
+        }
+
+
+        #secret p {
+
+            line-height: 2;
+
+            color: #64748b;
+
+        }
+
+
+        #secret strong {
+
+            color: #2563eb;
+
+            font-family: "Quicksand", sans-serif;
+
+            font-size: 20px;
+
+        }
+
+
+        @keyframes muncul {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(20px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+
+
+        /* =========================
+           MUSIC
+        ========================== */
+
+        .music {
+
+            position: fixed;
+
+            right: 20px;
+
+            bottom: 20px;
+
+            z-index: 100;
+
+        }
+
+
+        .music button {
+
+            width: 50px;
+
+            height: 50px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: #2563eb;
+
+            color: white;
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            box-shadow:
+
+                0 8px 20px rgba(37,99,235,.25);
+
+        }
+
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+
+            padding: 40px 20px;
+
+            text-align: center;
+
+            background: #1e3a8a;
+
+            color: #dbeafe;
+
+        }
+
+
+        footer p {
+
+            font-family: "Quicksand", sans-serif;
+
+            font-weight: 600;
+
+        }
+
+
+        footer small {
+
+            display: block;
+
+            margin-top: 8px;
+
+            color: #bfdbfe;
+
+        }
+
+
+
+        /* =========================
+           HEART FALLING
+        ========================== */
+
+        .heart {
+
+            position: fixed;
+
+            top: -20px;
+
+            z-index: 50;
+
+            pointer-events: none;
+
+            animation: fall linear forwards;
+
+        }
+
+
+        @keyframes fall {
+
+            to {
+
+                transform:
+                    translateY(110vh)
+                    rotate(360deg);
+
+                opacity: 0;
+
+            }
+
+        }
+
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 700px) {
+
+            .opening h1 {
+
+                font-size: 28px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 36px;
+
+            }
+
+
+            .hero h2 {
+
+                font-size: 19px;
+
+            }
+
+
+            .cards {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .photo {
+
+                width: 250px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <audio id="musik" loop>
+        <source src="d:\HUMAIRO SAODA\privat\lope.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- =========================
+         OPENING
+    ========================== -->
+
+    <div class="opening" id="opening">
+
+        <div class="opening-icon">
+            🧸
+        </div>
+
+
+        <h1>
+            Eh... ada sesuatu buat kamu
+        </h1>
+
+
+        <p>
+
+            Tenang, bukan tugas sekolah kok 😭
+
+            <br>
+
+            Aku cuma mau kasih sesuatu
+            yang sedikit berbeda.
+
+        </p>
+
+
+        <button
+            class="open-button"
+            onclick="openWebsite()">
+
+            Buka dulu 🤏🏻💙
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <div class="hero">
+
+        <div class="hero-heart">
+            💙
+        </div>
+
+
+        <div class="small-text">
+            khusus untuk kamu
+        </div>
+
+
+        <h1>
+            My Favorite Boy
+        </h1>
+
+
+        <h2>
+            alias manusia kesayanganku :)
+        </h2>
+
+
+        <p>
+
+            Aku bikin halaman kecil ini
+            karena kadang ada hal yang lebih
+            gampang ditulis daripada diucapkan.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- =========================
+         MESSAGE
+    ========================== -->
+
+    <section>
+
+        <h2 class="title">
+            Hai, Kamu 👋🏻
+        </h2>
+
+
+        <p class="subtitle">
+            boleh senyum dulu sebelum lanjut :)
+        </p>
+
+
+        <p class="text">
+
+            Aku cuma mau bilang...
+
+            <br><br>
+
+            Terima kasih sudah hadir di hidupku.
+
+            <br><br>
+
+            Terima kasih untuk semua cerita,
+            obrolan random, candaan,
+            dan hal-hal kecil yang mungkin
+            menurut kamu biasa saja.
+
+            <br><br>
+
+            Tapi buat aku,
+            hal-hal kecil itu justru yang
+            bikin semuanya terasa spesial.
+
+            <br><br>
+
+            Jadi kalau suatu hari kamu merasa
+            hari kamu sedang nggak baik-baik saja,
+            ingat kalau ada seseorang
+            yang tetap menghargai keberadaan kamu.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+     PHOTO
+========================= -->
+
+<section>
+
+    <h2 class="title">
+        One of My Favorite Photos 📸
+    </h2>
+
+    <p class="subtitle">
+        jangan protes kalau fotonya jelek 😭
+        <br>
+        kamu sih disuruh kirim foto gak mau
+    </p>
+
+    <div class="photo">
+
+        <img src="imfer.jpg" alt="Foto">
+
+        <p>
+            satu foto,
+            banyak cerita 💙
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<audio id="music" loop>
+    <source src="lope.mp3" type="audio/mpeg">
+</audio>
+
+
+    <!-- =========================
+         CARDS
+    ========================== -->
+
+    <section>
+
+        <h2 class="title">
+            Kenapa Kamu? 🤔
+        </h2>
+
+
+        <p class="subtitle">
+            pertanyaan yang sebenarnya nggak perlu dijawab
+        </p>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <div class="card-icon">
+                    🧸
+                </div>
+
+
+                <h3>
+                    Kamu ya Kamu
+                </h3>
+
+
+                <p>
+
+                    Aku suka kamu bukan karena
+                    kamu harus sempurna.
+                    Justru karena kamu punya
+                    cara sendiri untuk menjadi kamu.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="card-icon">
+                    ☕
+                </div>
+
+
+                <h3>
+                    Obrolan Random
+                </h3>
+
+
+                <p>
+
+                    Dari pembicaraan penting
+                    sampai pembahasan nggak jelas,
+                    semuanya tetap seru kalau sama kamu.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="card-icon">
+                    🐻
+                </div>
+
+
+                <h3>
+                    Bikin Nyaman
+                </h3>
+
+
+                <p>
+
+                    Ada orang yang bikin kita
+                    nyaman tanpa perlu melakukan
+                    sesuatu yang berlebihan.
+                    Kamu salah satunya.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SECRET
+    ========================== -->
+
+    <section>
+
+        <h2 class="title">
+            Jangan Dibuka 👀
+        </h2>
+
+
+        <p class="subtitle">
+            serius, jangan...
+        </p>
+
+
+        <button
+            class="secret-button"
+            onclick="showSecret()">
+
+            Aku bilang jangan 😭
+
+        </button>
+
+
+        <div id="secret">
+
+            <p>
+
+                Oke, kamu ngeyel ternyata 😭
+
+                <br><br>
+
+                Sebenarnya aku cuma ingin bilang:
+
+                <br><br>
+
+                <strong>
+                    "Aku senang punya kamu." 💙
+                </strong>
+
+                <br><br>
+
+                Nggak perlu hari ulang tahun.
+                Nggak perlu hari Valentine.
+                Nggak perlu alasan khusus.
+
+                <br><br>
+
+                Karena menurutku,
+                kamu memang pantas mendapatkan
+                kata-kata baik kapan saja.
+
+                <br><br>
+
+                Jadi...
+
+                <br>
+
+                <strong>
+                    stay with me, okay? :)
+                </strong>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MUSIC
+    ========================== -->
+
+    <audio id="music" loop>
+
+        <source
+            src="d:\HUMAIRO SAODA\privat\lope.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <div class="music">
+
+        <button onclick="toggleMusic()">
+
+            🎵
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            Made with 💙 for my favorite boy
+        </p>
+
+
+        <small>
+            no birthday, no special occasion,
+            just because you're special.
+        </small>
+
+    </footer>
+
+
+
+    <script>
+
+
+        /* =========================
+           OPEN WEBSITE + MUSIC
+        ========================== */
+
+        function openWebsite() {
+
+            document
+                .getElementById("music")
+                .play();
+
+            document
+                .getElementById("opening")
+                .style.opacity = "0";
+
+
+            setTimeout(function() {
+
+                document
+                    .getElementById("opening")
+                    .style.display = "none";
+
+            }, 1000);
+
+        }
+
+
+
+        /* =========================
+           MUSIC BUTTON
+        ========================== */
+
+        let playing = true;
+
+
+        function toggleMusic() {
+
+            let music =
+                document.getElementById("music");
+
+
+            if (playing) {
+
+                music.pause();
+
+                playing = false;
+
+            }
+
+            else {
+
+                music.play();
+
+                playing = true;
+
+            }
+
+        }
+
+
+
+        /* =========================
+           SECRET MESSAGE
+        ========================== */
+
+        function showSecret() {
+
+            document
+                .getElementById("secret")
+                .style.display = "block";
+
+
+            createHearts();
+
+        }
+
+
+
+        /* =========================
+           HEART ANIMATION
+        ========================== */
+
+        function createHearts() {
+
+            for (let i = 0; i < 25; i++) {
+
+                let heart =
+                    document.createElement("div");
+
+
+                heart.classList.add("heart");
+
+
+                heart.innerHTML =
+                    Math.random() > .5
+                    ? "💙"
+                    : "🩵";
+
+
+                heart.style.left =
+                    Math.random() * 100 + "vw";
+
+
+                heart.style.fontSize =
+                    Math.random() * 15 + 15 + "px";
+
+
+                heart.style.animationDuration =
+                    Math.random() * 3 + 3 + "s";
+
+
+                document.body.appendChild(heart);
+
+
+                setTimeout(function() {
+
+                    heart.remove();
+
+                }, 6000);
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+```
